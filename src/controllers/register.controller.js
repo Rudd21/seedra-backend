@@ -1,6 +1,4 @@
-import { PrismaClient } from "@prisma/client"
-
-const prisma = new PrismaClient();
+import { prisma } from "../../prisma/prismaClient"
 
 export const register = async(req, res) => {
     const { name, email, password } = req.body;

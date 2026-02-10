@@ -1,7 +1,6 @@
-import { PrismaClient } from "@prisma/client"
 import crypto from 'crypto'
 
-const prisma = new PrismaClient();
+import { prisma } from "../../prisma/prismaClient"
 
 export const createOrder = async(req, res) => {
 
