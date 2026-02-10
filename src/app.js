@@ -195,20 +195,7 @@ app.post('/logout', (req, res) => {
     return res.status(200).json({ message: 'Ви вийшли з аккаунту!' });
 });
 
-// Контролер, що робить користувача адміном
-// app.get('/meAsAdmin', verifyToken, async(req, res) => {
-//     const user = req.user;
-//     try {
-//         await prisma.user.update({
-//             where: { id: user.id },
-//             data: { role: 'ADMIN' }
-//         })
-//         res.status(200).json({ message: "Успішно змілось" })
-//     } catch (err) {
-//         console.log(err)
-//         res.status(500).json({ error: "Памілка" })
-//     }
-// })
+
 
 // Admin Controllers
 // import {} from './middleware/checkAdmin.middleware.js';
