@@ -1,4 +1,4 @@
-import { prisma } from "../../prisma/prismaClient"
+import { prisma } from "../../prisma/prismaClient.js"
 
 export const getReports = async(req, res) => {
     const role = req.user.role;

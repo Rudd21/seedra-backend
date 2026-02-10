@@ -1,4 +1,4 @@
-import { prisma } from "../../prisma/prismaClient"
+import { prisma } from "../../prisma/prismaClient.js"
 
 export const reqComment = async(req, res) => {
     const { productId } = req.query

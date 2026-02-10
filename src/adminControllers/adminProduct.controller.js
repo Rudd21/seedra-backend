@@ -1,4 +1,4 @@
-import { prisma } from "../../prisma/prismaClient"
+import { prisma } from "../../prisma/prismaClient.js"
 
 export const searchProductById = async(req, res) => {
     const { q } = req.query;

@@ -1,6 +1,6 @@
 import crypto from 'crypto'
 
-import { prisma } from "../../prisma/prismaClient"
+import { prisma } from "../../prisma/prismaClient.js"
 
 export const createOrder = async(req, res) => {
 
