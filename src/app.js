@@ -33,7 +33,7 @@ const prisma = new PrismaClient();
 const app = express();
 
 app.use(cors({
-    origin: 'https://seedra-food.vercel.app', // Дозволяємо запити тільки з твого сайту
+    origin: "https://seedra-food.vercel.app",
     credentials: true
 }));
 

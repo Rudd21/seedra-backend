@@ -10,7 +10,7 @@ export const addToBasket = (req, res) => {
 
     res.cookie("basket", JSON.stringify(basket), {
         httpOnly: true,
-        sameSite: "Strict",
+        sameSite: "none",
         secure: true,
         maxAge: 7 * 24 * 60 * 60 * 1000,
     });
@@ -33,7 +33,7 @@ export const removeFromBasket = (req, res) => {
 
     res.cookie("basket", JSON.stringify(basket), {
         httpOnly: true,
-        sameSite: "Strict",
+        sameSite: "none",
         secure: true,
         maxAge: 7 * 24 * 60 * 60 * 1000,
     });
