@@ -30,7 +30,7 @@ export const createOrder = async(req, res) => {
 
         res.cookie("order_tokens", JSON.stringify(orders), {
             httpOnly: true,
-            sameSite: "Strict",
+            sameSite: "none",
             secure: true,
             maxAge: 7 * 24 * 60 * 60 * 1000,
         });
@@ -124,7 +124,7 @@ export const deleteOrder = async(req, res) => {
 
         res.cookie("order_tokens", JSON.stringify(orders), {
             httpOnly: true,
-            sameSite: "Strict",
+            sameSite: "none",
             secure: true,
             maxAge: 7 * 24 * 60 * 60 * 1000,
         });
